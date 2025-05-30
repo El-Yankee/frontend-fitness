@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Cambia los colores según tu paleta */
+.swiper-button-next,
+.swiper-button-prev {
+  background: #f8e8e0; /* Fondo claro */
+  color: #a67c52; /* Color de la flecha */
+  border-radius: 50%; /* Forma circular */
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 2px solid #a67c52;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #a67c52;
+  color: #fff;
+  border-color: #a67c52;
+}
