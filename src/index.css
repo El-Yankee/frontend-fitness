@@ -28,3 +28,10 @@
   color: #fff;
   border-color: #a67c52;
 }
+/* Oculta las flechas de Swiper en pantallas menores a 768px */
+@media (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
