@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Testimonios from "../components/Testimonios";
 
 export default function Home() {
   return (
@@ -79,6 +80,7 @@ export default function Home() {
         </h2>
         <p>— Bahía</p>
       </section>
+      <Testimonios />
     </div>
   );
 }

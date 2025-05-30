@@ -41,7 +41,7 @@ const clases = [
 
 export default function Clases() {
   return (
-    <main className="max-w-6xl mx-auto px-4 py-16">
+    <main className="max-w-6xl min-h-screen mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center text-pink-600 mb-12">
         Clases disponibles
       </h2>
