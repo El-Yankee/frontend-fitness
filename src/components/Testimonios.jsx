@@ -74,18 +74,17 @@ export default function Testimonios() {
           autoplay
           dots
           draggable
-          responsive={true}
           prevArrow={
             <button
               style={{
                 position: "absolute",
-                left: 10, // más cerca del card
+                left: -30,
                 top: "50%",
                 transform: "translateY(-50%)",
                 fontSize: 24,
                 background: "none",
                 border: "none",
-                color: "#555",
+                color: "#333",
                 zIndex: 1,
                 cursor: "pointer",
               }}
@@ -97,14 +96,13 @@ export default function Testimonios() {
             <button
               style={{
                 position: "absolute",
-                right: 10,
+                right: -30,
                 top: "50%",
                 transform: "translateY(-50%)",
                 fontSize: 24,
                 background: "none",
                 border: "none",
-                color: "#555",
-                zIndex: 1,
+                color: "#333",
                 cursor: "pointer",
               }}
             >
