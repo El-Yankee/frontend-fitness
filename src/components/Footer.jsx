@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer style={{ padding: "1rem", marginTop: "2rem", background: "#eee" }}>
-      <p>© 2025 Entrenamientos personalizados</p>
+    <footer className="py-4 mt-8 bg-gray-100 text-right mr-5">
+      <p>Copyright 2025 © Made with Santiago Usaj</p>
     </footer>
   );
 }
