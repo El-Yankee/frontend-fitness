@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
 import Home from "./pages/Home";
 import Clases from "./pages/Clases";
 import ClaseDetalle from "./pages/ClaseDetalle";
@@ -10,17 +11,21 @@ import Contacto from "./pages/Contacto";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <main style={{ padding: "1rem" }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/clases" element={<Clases />} />
-          <Route path="/clases/:id" element={<ClaseDetalle />} />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/contacto" element={<Contacto />} />
-        </Routes>
-      </main>
-      <Footer />
+      <div className="font-sans text-gray-800 flex flex-col min-h-screen">
+        <Navbar />
+
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/clases" element={<Clases />} />
+            <Route path="/clases/:id" element={<ClaseDetalle />} />
+            <Route path="/sobre" element={<Sobre />} />
+            <Route path="/contacto" element={<Contacto />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
     </Router>
   );
 }

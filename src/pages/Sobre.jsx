@@ -1,10 +1,11 @@
 export default function Sobre() {
   return (
-    <div>
-      <h1>Sobre mí</h1>
-      <p>
-        Hola, soy profesora de educación física con años de experiencia ayudando
-        a personas a mejorar su bienestar.
+    <div className="py-16 px-4 max-w-4xl mx-auto">
+      <h2 className="text-3xl font-bold mb-6">Sobre Nosotros</h2>
+      <p className="text-gray-700 leading-relaxed">
+        Somos un equipo apasionado por el movimiento y el bienestar. Ofrecemos
+        entrenamientos personalizados tanto online como presenciales, pensados
+        para acompañarte en cada etapa de tu camino.
       </p>
     </div>
   );
