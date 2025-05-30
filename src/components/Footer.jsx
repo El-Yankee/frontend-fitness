@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center text-sm mt-8 text-brown-600">
-        © {new Date().getFullYear()} Bahía Fitness. Todos los derechos
+        © {new Date().getFullYear()} Bahía Entrena. Todos los derechos
         reservados.
       </div>
     </footer>
