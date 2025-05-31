@@ -6,7 +6,7 @@ function Contacto() {
   return (
     <Layout>
       <div className="min-h-screen bg-[#FFF1E6] flex items-center justify-center px-4 py-16">
-        <div className="max-w-2xl w-full bg-white/80 rounded-3xl shadow-xl p-8 md:p-16 flex flex-col gap-12">
+        <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl p-8 md:p-16 flex flex-col gap-12">
           {/* Datos de contacto */}
           <div className="flex-1 flex flex-col justify-center gap-8">
             <h2 className="text-5xl font-extrabold text-pink-600 mb-2">

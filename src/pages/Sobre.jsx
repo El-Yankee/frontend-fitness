@@ -10,7 +10,7 @@ export default function Sobre() {
           <img
             src="/assets/funcional.jpg" // Cambia por tu foto real si tienes una
             alt="Bahía entrenando"
-            className="w-64 h-64 object-cover rounded-full border-8 border-[#F8E8E0] shadow-lg"
+            className="w-64 h-64 object-cover rounded-full border-8 border-[#ec4899] shadow-lg"
           />
         </div>
         {/* Texto descriptivo */}

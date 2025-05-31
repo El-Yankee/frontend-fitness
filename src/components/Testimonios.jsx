@@ -36,8 +36,6 @@ const containerStyle = {
   margin: "auto",
   background: "rgba(255, 241, 230, 0.85)", // Fondo acorde al sitio
   borderRadius: 32,
-  // border: "4px solid #F8E8E0", // Eliminado el reborde
-  //boxShadow: "0 4px 24px rgba(0,0,0,0.04)",
   padding: "32px 0",
   fontFamily: "sans-serif",
 };
@@ -47,7 +45,7 @@ const contentStyle = {
   minHeight: "220px",
   background: "#fff",
   borderRadius: 16,
-  border: "2px solid #E6F0D8",
+  border: "2px solid #a67c52",
   boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
   display: "flex",
   flexDirection: "column",
