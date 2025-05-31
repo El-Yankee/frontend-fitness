@@ -22,7 +22,9 @@ function Contacto() {
                 <div>
                   <p className="font-semibold text-[#a67c52]">Teléfono</p>
                   <a
-                    href="tel:+5491134567890"
+                    href="https://wa.me/5492352485156"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#3d3029] hover:underline block"
                   >
                     +54 9 11 3456 7890

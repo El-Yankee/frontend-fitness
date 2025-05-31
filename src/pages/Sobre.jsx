@@ -1,20 +1,36 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { motion } from "framer-motion";
+
+function useIsMobile() {
+  return window.innerWidth < 768;
+}
 
 export default function Sobre() {
+  const isMobile = useIsMobile();
+
   return (
     <Layout>
       <section className="py-16 px-4 max-w-4xl mx-auto min-h-screen flex flex-col md:flex-row items-center gap-10">
         {/* Imagen de perfil */}
-        <div className="flex-shrink-0">
+        <motion.div
+          className="flex-shrink-0"
+          initial={{ opacity: 0, x: isMobile ? 0 : -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <img
-            src="/assets/funcional.jpg" // Cambia por tu foto real si tienes una
+            src="/assets/funcional/funcional1.jpg"
             alt="Bahía entrenando"
             className="w-64 h-64 object-cover rounded-full border-8 border-[#ec4899] shadow-lg"
           />
-        </div>
+        </motion.div>
         {/* Texto descriptivo */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: isMobile ? 0 : 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           <h2 className="text-4xl font-extrabold text-pink-600 mb-4">
             Sobre mí
           </h2>
@@ -37,7 +53,7 @@ export default function Sobre() {
             Creo que el movimiento es una herramienta poderosa para transformar
             tu vida. ¡Te invito a sumarte y descubrirlo juntas!
           </p>
-        </div>
+        </motion.div>
       </section>
     </Layout>
   );

@@ -28,6 +28,16 @@
   color: #fff;
   border-color: #a67c52;
 }
+
+/* Cambia el color de los bullets del paginador de Swiper */
+.swiper-pagination-bullet {
+  background: #ec4899 !important; /* Rosa de tu paleta */
+  opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+  background: #ec4899 !important; /* Rosa fuerte para el activo */
+  opacity: 1;
+}
 /* Oculta las flechas de Swiper en pantallas menores a 768px */
 @media (max-width: 767px) {
   .swiper-button-next,

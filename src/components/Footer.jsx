@@ -13,7 +13,9 @@ const Footer = () => {
               <FaPhoneAlt className="text-[#a67c52]" />
             </span>
             <a
-              href="tel:+5492352485156"
+              href="https://wa.me/5492352485156"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:underline text-[#3d3029]"
             >
               +54 9 2352 48 51 56

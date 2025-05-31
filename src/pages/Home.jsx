@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Testimonios from "../components/Testimonios";
 import Layout from "../components/Layout";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -79,12 +80,12 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <a
-                href="/clases"
+              <Link
+                to="/clases"
                 className="inline-block bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-pink-700 transition"
               >
                 Conocer más
-              </a>
+              </Link>
             </motion.div>
           </div>
         </section>

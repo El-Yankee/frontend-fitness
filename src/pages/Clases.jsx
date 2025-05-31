@@ -4,7 +4,6 @@ import Layout from "../components/Layout";
 import {
   FaDumbbell,
   FaHeartbeat,
-  FaLeaf,
   FaHiking,
   FaUserFriends,
   FaSpa,
@@ -19,6 +18,7 @@ const clases = [
       "Entrenamientos dinámicos para mejorar fuerza, coordinación y resistencia.",
     color: "bg-pink-100",
     icono: <FaDumbbell className="text-pink-400" />,
+    link: "/clases/funcional",
   },
   {
     id: "cardio",
@@ -27,6 +27,7 @@ const clases = [
       "Movete, sudá y sentite viva. Mejorá tu capacidad aeróbica con clases activas.",
     color: "bg-yellow-100",
     icono: <FaHeartbeat className="text-yellow-400" />,
+    link: "/clases/cardio",
   },
   {
     id: "yoga",
@@ -35,6 +36,7 @@ const clases = [
       "Conectá con tu cuerpo y tu respiración. Clases para fortalecer y relajar.",
     color: "bg-blue-100",
     icono: <FaSpa className="text-blue-400" />,
+    link: "/clases/yoga",
   },
   {
     id: "trekking",
@@ -43,6 +45,7 @@ const clases = [
       "Salidas al aire libre para reconectar con la naturaleza y moverse en grupo.",
     color: "bg-green-100",
     icono: <FaHiking className="text-green-400" />,
+    link: "/clases/trekking",
   },
   {
     id: "personalizadas",
@@ -51,6 +54,7 @@ const clases = [
       "Planes de entrenamiento hechos a tu medida. Ideal para objetivos específicos.",
     color: "bg-purple-100",
     icono: <FaUserFriends className="text-purple-400" />,
+    link: "/clases/personalizadas",
   },
 ];
 
@@ -63,7 +67,7 @@ export default function Clases() {
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {clases.map((clase, idx) => (
-            <Link to={`/clases/${clase.id}`} key={clase.id}>
+            <Link to={clase.link} key={clase.id}>
               <motion.div
                 className={`rounded-xl shadow-md hover:shadow-2xl transition p-6 ${clase.color} hover:scale-105 border-2 border-transparent hover:border-pink-500 hover:-translate-y-1 cursor-pointer duration-200 flex flex-col items-start`}
                 initial={{ opacity: 0, y: 30 }}
