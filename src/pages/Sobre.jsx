@@ -20,7 +20,7 @@ export default function Sobre() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="/assets/funcional/funcional1.jpg"
+            src="/assets/sobre_mi/sobre_mi.jpeg"
             alt="Bahía entrenando"
             className="w-64 h-64 object-cover rounded-full border-8 border-[#ec4899] shadow-lg"
           />
